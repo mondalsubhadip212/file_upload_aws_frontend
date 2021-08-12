@@ -77,7 +77,7 @@ $(document).ready(()=>{
             )           
             let file = $("#customFile")[0].files[0]
             if(file != undefined){
-                if(file.type == "image/jpeg" || file.type == "image/jpeg"){
+                if(file.type == "image/jpeg" || file.type == "image/png"){
                     if(file.size <= 1000*1000*5){
                         let fd = new FormData()
                         let dt = new Date()
