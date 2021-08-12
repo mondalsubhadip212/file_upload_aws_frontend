@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+    crossorigin="anonymous">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="/CSS/index.css">
+    <title>AWS</title>
+</head>
+<body style="background-color: #78C0E0;">
+    <!-- nav bar blank space -->
+    <div class="row" 
+    style="height: 150px;justify-content: center;margin-top: 20px;">
+        <p class="display-4" style="color: #F13030;font-weight: 400;">
+            Upload Files to AWS s3
+        </p>
+    </div>
+
+    <!-- main content -->
+    <div class="row">
+        <div class="col-12">
+            <!-- file upload -->
+            <div class="row" style="justify-content: center;margin-bottom: 20px;">
+                <div class="col-4" style="justify-content: center;">
+                    <p style="color: red;text-align: center;font-size: 26px;"
+                    id="warning">
+                    </p>
+                    <p style="color: green;text-align: center;font-size: 26px;"
+                    id="success">
+                    </p>
+                    <p style="color: black;text-align: center; font-size: 26px;"
+                    id="waiting">
+                    </p>
+                    <form class="form-inline">
+                        <div class="custom-file" style="margin-bottom: 15px;">
+                            <input type="file" accept="image/jpeg,image/png" class="custom-file-input" id="customFile">
+                            <label class="custom-file-label" for="customFile">Choose file</label>
+                        </div>
+                        <button type="button" 
+                        class="btn btn-success btn-block"
+                        id="fileupload">upload</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row" style="justify-content: center;margin-bottom: 20px;">
+                <div class="col-4" style="justify-content: center;">
+                    <p class="display-4" style="color:black;font-weight: 400;">
+                        Files in AWS s3
+                    </p>
+                </div>
+            </div>
+            <!-- file show -->
+            <div class="row" style="justify-content: center;">
+                <div class="col-6" style="justify-content: center;">
+                    <table class="table table-dark">
+                        <thead>
+                            <tr>
+                            <th scope="col">No.</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Date</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tablebody">
+                            <!-- table append -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- bootstrap cdn -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+    crossorigin="anonymous"></script>
+</body>
+    <!-- jqyery js -->
+<script src="/JS/jquery.js"></script>
+<script src="/JS/index.js"></script>
+</html>
